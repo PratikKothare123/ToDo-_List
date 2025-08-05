@@ -1,0 +1,130 @@
+*{
+    /* background-color: aquamarine; */
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Poppins",sans-serif;
+    /* box-sizing: border-box; */
+    
+}
+.container{
+    background: linear-gradient(135deg,#153677,#4e085f);
+    width: 100vw;
+    height: 100vh;
+}
+.todolist{
+    height: 430px;
+    width: 420px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+      position: fixed;
+      top: 100px;                
+      left: 50%;                 
+      transform: translateX(-50%);
+      
+      color: rgb(0, 0, 0);
+      align-items: center;       /* Vertically center text */
+      justify-content: center;   /* Horizontally center text */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+ @media (max-width: 405tpx) {
+    .todolist {
+      width: 90vw;         /* 90% of viewport width */
+      height: 480px;       /* fixed height for small screens */
+      font-size: 16px;     /* optional: adjust text size */
+    }
+.input{
+    text-align: center;
+    font-size: medium;
+    height: 30px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background-color: cornsilk;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-right: 65px;
+    display: flex;
+    
+}
+
+  }
+.unorderlist{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(45, 45, 139);
+}
+h1 img{
+    height: 30px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+
+input{
+    text-align: center;
+    font-size: medium;
+     width: 100%;
+     max-width: 280px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: cornsilk;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 19px auto;
+  max-width: 90%;
+}
+.btn {
+  border-radius: 20px;
+    position: relative;
+    /* margin: 15px; */
+    cursor: pointer;
+    padding: 5px;
+    background-color:#a32626;
+    color: white;
+    outline: none;
+    border: none;
+    opacity: 0.8;
+}
+
+.delet{
+    border-radius: 17px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background-color:#a32626;
+    color: white;
+    outline: none;
+    border: none;
+    opacity: 0.8;
+}
+.delet:hover{
+    opacity: 1;
+}
+.btn:hover{
+    
+    background-color: red;
+    opacity: 1;
+    cursor: pointer;
+}
+
+ul li{
+    font-size: large;
+    justify-content: space-between;
+   
+}
