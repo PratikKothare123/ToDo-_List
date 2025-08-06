@@ -82,11 +82,22 @@ input{
 
 .input-container {
   display: flex;
+  gap: 10px;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 19px auto;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+}
+.input-container .btn {
+  padding: 10px 16px;
+  font-size: 1rem;
 }
 .btn {
   border-radius: 20px;
@@ -122,9 +133,76 @@ input{
     opacity: 1;
     cursor: pointer;
 }
+#taskList li {
+  font-size: 1rem;
+  padding: 10px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+@media (max-width: 600px) {
+  .input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-container .btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
 
 ul li{
     font-size: large;
     justify-content: space-between;
    
+}
+
+/* make body responsive */
+body {
+  padding: 0 10px;
+}
+
+/* Auto width for container */
+#main,
+.todo-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input and button container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.input-container .btn {
+  padding: 10px 16px;
+  font-size: 1rem;
+}
+
+/* Task items */
+#taskList li {
+  font-size: 1rem;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .input-container {
+    flex-direction: column;
+  }
+  .input-container .btn {
+    width: 100%;
+    margin-top: 8px;
+  }
 }
